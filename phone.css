@@ -1,0 +1,36 @@
+body{
+    /* display: none; */
+background-color: aqua;
+}
+#navbar
+{
+    flex-direction: column;
+    
+}
+#logo{
+    border: 1px solid white;
+}
+#navbar ul
+{
+   
+    justify-content: center;
+    /* flex-direction: column; */
+}
+#service
+{
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+    width: 70vw;
+}
+.forms
+{
+    width: 95%;
+}
+.forms input{
+   
+    padding: 3px;
+    margin: 5px;
+}
