@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <style>
+        body{
+            width: 97vw;
+            margin: 2px;
+            background-color: rgb(223, 219, 219);
+        }
+        #navbar
+        {
+            width: 97vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: black;
+            height: 11vh;
+            opacity: 0.7;
+            position: fixed;
+            border-radius: 5px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0;
+            
+        }
+        #logo{
+            position: relative;
+        }
+        #logo img{
+            height: 1rem;
+            position: relative;
+            width: 10vw;
+        }
+       #navbar ul{
+            display: flex;
+            position: relative;
+            height: 1rem;
+        }
+        #navbar ul li{
+            background-color: black;
+            color: white;
+            list-style: none;
+        }
+        #navbar ul li a{
+           padding: 5px;
+           margin: 5px;
+           cursor: pointer;
+           text-decoration: none;
+           color: white;
+           font-size: 1.2rem;
+           border-radius: 15px;
+        }
+        #navbar ul li a:hover
+        {
+            color: black;
+            background-color: white;
+        }
+        #home
+        {
+            text-align: center;
+            background-image: url(food.jpeg);
+            padding: 15px 100px;
+            background-size: cover;
+            justify-content: center;
+            /* font-size: rem; */
+            color: rgb(28, 28, 29);
+            padding-top: 60px;
+            border-radius: 5px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0;
+            
+            
+        }
+        .btn
+        {
+            padding: 8px;
+            cursor: pointer;
+            color: rgb(38, 21, 194);
+            border-radius: 10px;
+            background-color: rgb(61, 231, 203);
+            width: fit-content;
+            opacity: 0.8;
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+
+        }
+        #service
+        {
+            display: flex;
+            justify-content: center;
+           
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .box
+        {
+            border: 2px solid grey;
+            border-radius: 25px;
+            font-size: 0.6rem;
+            margin: 20px;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+            background-color: rgb(197, 194, 194);
+            width: 23vw;
+        }
+        .forms{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 10px double black;
+            padding: 10px;
+            background-image: url("contact.jpg");
+            background-size: cover;
+            color: rgb(11, 14, 13);
+            
+        }
+        .forms input{
+            width: 50%;
+            padding: 3px;
+            margin: 5px;
+        }
+        footer{
+            text-align: center;
+            color: white;
+            background-color: rgb(10, 10, 10);
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<nav id="navbar">
+    <div id="logo">
+        <img src="logo.jpg" alt="">
+    </div>
+    <ul >
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About Us</a></li>
+        <li class="item"><a href="#">Contact us</a></li>
+    </ul>
+</nav>
+<section id="home">
+    <h1 style="color: blue;">Welcome to MyOnline Meal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet distinctio cum, reiciendis sed beatae accusamus iusto consequatur ipsum debitis nobis! Aliquid repellat porro iusto quos vero ea accusantium laboriosam asperiores.
+   ritatis aperiam in ea adipisci vero ipsa incidunt? Similique, corrupti.</p>
+    <button class="btn">Order Now</button>
+</section>
+<h1 style="color: blue; text-align: center;">Our Services</h1>
+<section id="service">
+    <div class="box">
+        <img src="cater.jpg" height="100px" width="100px">
+        <h3>Food Ordering</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quidem velit, quibusdam enim ut nam necessitatibus reprehenderit, voluptatum quas aliquid, non deserunt dolores minus fugit maxime officiis consectetur nobis ea.</p>
+    </div>
+    <div class="box">
+        <img src="fooddelivery.jpg" height="100px" width="100px">
+        <h3>Bulk Catering</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quidem velit, quibusdam enim ut nam necessitatibus reprehenderit, voluptatum quas aliquid, non deserunt dolores minus fugit maxime officiis consectetur nobis ea.</p>
+    </div>
+    <div class="box">
+        <img src="pizza.jpg" height="100px" width="100px">
+        <h3>Food Delivery</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni quidem velit, quibusdam enim ut nam necessitatibus reprehenderit, voluptatum quas aliquid, non deserunt dolores minus fugit maxime officiis consectetur nobis ea.</p>
+    </div>
+</section>
+<section id="contact">
+    
+    <div class="forms">
+        <h1 style=" text-align: center; font-size: 2rem;">Contact Us</h1>
+        <label for="name"><b>Name:</b>
+        <input type="text" id="name" placeholder="Enter your name">
+        </label>
+        
+        <label for="email"><b>Email id:</b>
+            <input type="email" id="name" placeholder="Enter your email">
+        </label>
+        <label for="no"><b>Mobile No. :</b>
+            <input type="text" id="no" placeholder="Enter your number">
+        </label>
+        <b>Message:</b>
+                <textarea name="aa" cols="30" rows="4"  >
+
+                </textarea>
+       
+    </div>
+</section>
+<footer>
+    Copyright &copy; www.myonlinemeal.com All rights reserved !!
+</footer>
+</body>
+</html>
